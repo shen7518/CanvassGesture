@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#cf0"
+    android:paddingTop="10px"
+     android:paddingBottom="20px"
+    >
+    <Button 
+    android:text="@string/save"
+    android:id="@+id/save"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+        />
+  
+  <Button
+  	android:layout_weight="1"
+
+  	android:id="@+id/relaod" 
+	android:text="@string/reload"
+  	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+ />
+  
+  <Button
+  	android:id="@+id/close" 
+	android:text="@string/close"
+  	android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+   />
+</LinearLayout>

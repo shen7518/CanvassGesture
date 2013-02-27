@@ -1,0 +1,14 @@
+﻿Expression					::= AdditiveExpression
+
+AdditiveExpression			::= MultiplicativeExpression AdditiveExpression1
+AdditiveExpression1			::= AdditiveOperators MultiplicativeExpression AdditiveExpression1 | <empty>
+AdditiveOperators			::= '+' | '-'
+
+MultiplicativeExpression	::= UnaryExpression MultiplicativeExpression1
+MultiplicativeExpression1	::= MultiplicativeOperators UnaryExpression MultiplicativeExpression1 | <empty>
+MultiplicativeOperators		::= '*' | '/'
+
+UnaryExpression				::= UnaryOperators UnaryExpression	
+UnaryOperators				::= '+'|'-'|<empty>
+PrimaryExpression			::= '(' Expression ')' | NUMBER | TEXT | LITERAL | ERROR
+

@@ -1,0 +1,26 @@
+
+this is from the alert dialogue box for the InputFrame:::
+
+AlertDialog.Builder alert = new AlertDialog.Builder(this.getContext());
+		alert.setTitle("Data input");
+		final EditText input = new EditText(this.getContext());
+		input.setOnEditorActionListener(new OnEditorActionListener() {
+			@Override
+			public boolean onEditorAction(TextView view, int arg1, KeyEvent arg) {
+				if(arg.getKeyCode() == KeyEvent.KEYCODE_ENTER){
+					String inputText = input.getText().toString();
+					ad.dismiss();
+					dataProvider.setCellValue(point, new CellContent(inputText));
+				}
+				return true;
+			}
+		});
+		alert.setView(input);
+		if( point.isCell() && dataProvider.hasCellValue(point)){
+			String data = dataProvider.getCellValue(point);
+			input.setText(data);
+		}
+		alert.setPositiveButton("Input", new ClickManager(point, input, this, true, this.dataProvider));
+		alert.setNegativeButton("Delete", new ClickManager(point, input, this, false, this.dataProvider));
+		ad = alert.create();
+		ad.show();

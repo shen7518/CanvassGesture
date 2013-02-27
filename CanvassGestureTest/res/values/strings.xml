@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CanvassGestureTestActivity!</string>
+    <string name="app_name">CanvassGestureTest</string>
+    <string name="scroll">Single Selection</string>
+    <string name="clear">Clear Selection</string>
+    <string name="delete">Delete Contents</string>
+    <string name="selection">Mass Selection</string>
+    <string name="save">SAVE</string>
+    <string name="close">CLOSE</string>
+    <string name="reload">RELOAD</string>
+    <string name="savedAlert">Successfully saved!!!</string>
+    <string name="reloadedAlert">"Successfully reloaded!!!"</string>
+    <string name="quitAlert">"Are you sure you want to QUIT?"</string>
+    <string name="startRectangularSelection">Start Rectangular Selection</string>
+    <string name="endRectangularSelection">End Rectangular Selection</string>
+    <string name="cancelRectangularSelection">Cancel Rectangular Selection</string>
+    <string name="createNewFile">Create New File</string>
+    <string name="recentFiles">Recent Files</string>
+    <string name="copy">COPY</string>
+    <string name="cut">CUT</string>
+    <string name="paste">PASTE</string>
+     <string name="deleteFile">DELETE</string>
+      <string name="deleteInput">DEL</string>
+     <string name="ok">OK</string>
+      <string name="cancel">CANCEL</string>
+     <string name="inputFileName">Input File Name</string>
+     <string name="filenameAlreadyInUse">Filename Already In Use</string>
+     <string name="filenameTooLong">Filename Either Too Short Or Too Long</string>
+
+</resources>
